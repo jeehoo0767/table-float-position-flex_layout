@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@import url("http://zzupd.dothome.co.kr/200528/cssReset/reset.css");
+
+/* Guide Line */
+div#wrap { border: 1px solid #000; }
+.tblCell { border: 1px solid #000; }
+div#slideshow { border: 1px solid #000; }
+/* Guide Line */
+
+
+/* 공통영역 시작 */
+div#wrap {
+    width: 1000px;
+}
+
+.tbl { display: table; }
+.tblRow { display: table-row; }
+.tblCell { 
+        display: table-cell; 
+        vertical-align: top;
+}
+/* 공통영역 끝 */
+
+/* header#header 시작 */
+header#header {
+    width: 220px;    
+}
+
+    /* div#headerLogo 시작 */
+    div#headerLogo {
+        text-align: center;
+    }
+    /* div#headerLogo 끝 */
+
+    /* nav#gnb 시작 */
+    nav#gnb {
+        width: 200px;
+        margin: 14px auto;
+    }
+
+#gnb>ul#mainMenu {
+    list-style: none;
+    padding-left: 0;
+}
+#gnb li {
+    text-align: center;
+    padding: 14px;
+    border: 1px solid #000;   
+    border-bottom: none;
+    background-color: #e7f7f7;    
+}
+#gnb li:last-child {
+    border-bottom: 1px solid #000;
+}
+
+
+#gnb li a {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+    /* nav#gnb 끝 */
+
+
+/* header#header 끝 */
+
+
+/* div#rightArea 시작 */
+div#rightArea div#slideshow {
+    height: 350px;
+    text-align: center;    
+    overflow: hidden;
+    margin: 6px;
+    
+    position: relative;
+}
+
+#rightArea div#slideshow span {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main#main {
+    width: 760px;
+    margin: 0 auto;
+/*    border: 1px solid #f00;*/
+    display: flex;    
+    
+}
+main#main>* {
+    border: 1px solid #ccc;
+}
+div#bbs {
+    width: 320px;
+    height: 200px;
+    padding: 6px;
+    position: relative;
+    box-sizing: border-box;
+}
+#bbs button {
+    padding: 4px 14px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    top: 2px;
+}
+#bbs button:first-child {
+    border-bottom: none;
+}
+#bbs button:nth-child(2) {
+    left: 24px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    top: 1px;
+}
+#bbs div#content {
+    height: 156px;
+    border: 1px solid #ccc;
+    
+}
+#banner {   /* 180 * 69 */
+    width: 220px;
+    height: 200px;
+    padding: 65px 20px;
+    box-sizing: border-box;    
+}
+#shortcut {   /* 180 * 135 */
+    width: 220px;
+    height: 200px;
+    padding: 32px 20px;
+    box-sizing: border-box;    
+}
+
+/* div#rightArea 끝 */
+
+
+
+/* footer#footer 시작 */
+footer#footer {
+    width: 760px;
+    height: 80px;
+/*    border: 1px solid #00f;*/
+    margin: 0 auto;
+    display: flex;    
+}
+#footer>img {
+    width: 200px;
+    height: 40px;
+    padding: 20px 0;
+/*    border: 1px solid #f00;*/
+    box-sizing: content-box;
+}
+#footer>div#footerRight {
+    width: 560px;
+}
+#footer>div#footerRight nav {
+    margin: 10px 0;
+}
+#footer>#footerRight ul {
+/*    border: 1px solid #000;*/
+    margin: 0 auto;
+    list-style: none;
+}
+#footer>#footerRight li {
+    float: left;
+    margin: 0 10px;
+}
+#footer>#footerRight ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#footer>#footerRight span {
+    text-align: center;
+/*    border: 1px solid #000;*/
+    margin: 0 auto;
+    margin-top: 14px;
+    display: block;
+}
+/* footer#footer 끝 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
